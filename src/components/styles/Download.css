@@ -1,0 +1,96 @@
+/* Estilos específicos para a página de download */
+
+.download-section {
+  margin-bottom: 24px;
+}
+
+.input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.code-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.code-input:focus {
+  outline: none;
+  border-color: #4361ee;
+  box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 20px;
+  background-color: #4361ee;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+.download-btn:hover {
+  background-color: #3a0ca3;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(58, 12, 163, 0.2);
+}
+
+.download-btn:active {
+  transform: translateY(0);
+}
+
+.download-btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.upload-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 24px;
+  background-color: white;
+  color: #4361ee;
+  border: 2px solid #4361ee;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  gap: 8px;
+}
+
+.upload-link:hover {
+  background-color: #4361ee;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+}
+
+/* Responsividade */
+@media (max-width: 576px) {
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .code-input,
+  .download-btn {
+    width: 100%;
+  }
+  
+  .upload-link {
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
