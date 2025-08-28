@@ -12,7 +12,7 @@ function Download() {
     }
     
     // Envia o código para o endpoint da API.
-    fetch(`http://34.95.171.36:8080/files/download/${code}`)
+    fetch(`https://api.fastup.top:433/files/download/${code}`)
         .then((response) => {
             if (!response.ok) {
                 throw new Error("File download failed.");
