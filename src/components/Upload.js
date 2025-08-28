@@ -65,7 +65,7 @@ function Upload() {
     }
     
     try {
-      const response = await fetch("http://api.fastup.top:8080/files/upload", {
+      const response = await fetch("https://api.fastup.top:443/files/upload", {
         method: "POST",
         body: formData,
       });
