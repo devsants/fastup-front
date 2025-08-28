@@ -3,7 +3,7 @@ import "./styles/Download.css";
 
 
 function Download() {
-  document.title = "FastUp - Download";
+  // document.title = "FastUp - Download";
   const getFile = () => {
     const code = document.querySelector("input[type='text']").value;
     if (!code) {

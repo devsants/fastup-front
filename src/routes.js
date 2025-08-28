@@ -6,8 +6,8 @@ import Upload from "./Upload";
 const Routes = () => {
     return ( 
         <BrowserRouter>
-            <Route component={Upload} path="/" exact />
-            <Route component={Download} path="/download" />
+            <Route component={Upload} title="FastUp - Upload" path="/" exact />
+            <Route component={Download} title="FastUp - Downlaod" path="/download" />
         </BrowserRouter>
     )
 }

@@ -3,7 +3,7 @@ import './styles/Upload.css';
 import { Link } from "react-router-dom";
 
 function Upload() {
-  document.title = "FastUp - Upload";
+  // document.title = "FastUp - Upload";
   const [uploadStatus, setUploadStatus] = useState(" ");
   const [statusClass, setStatusClass] = useState("status");
   const [isDragging, setIsDragging] = useState(false);
