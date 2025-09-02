@@ -65,7 +65,7 @@ function Upload() {
     }
     
     try {
-      const response = await fetch(process.env.API_URL + "/files/upload", {
+      const response = await fetch(process.env.REACT_APP_API_URL + "/files/upload", {
         method: "POST",
         body: formData,
       });
