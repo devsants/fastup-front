@@ -12,6 +12,43 @@ body {
   line-height: 1.6;
 }
 
+/* Disclaimer no canto superior direito */
+.disclaimer {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  max-width: 320px;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  z-index: 1001;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #ff9900;
+}
+
+/* Créditos discretos */
+.credits {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+.credits a {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.credits a:hover {
+  text-decoration: underline;
+}
+
 /* Overlay de drag and drop para tela inteira */
 .fullscreen-drop-overlay {
   position: fixed;
@@ -293,6 +330,14 @@ body {
 
 /* Responsividade */
 @media (max-width: 576px) {
+  .disclaimer {
+    max-width: 280px;
+    font-size: 0.75rem;
+    padding: 10px;
+    right: 10px;
+    top: 10px;
+  }
+  
   .card {
     padding: 24px;
   }

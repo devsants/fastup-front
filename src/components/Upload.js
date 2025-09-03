@@ -10,7 +10,6 @@ function Upload() {
   const [showDropOverlay, setShowDropOverlay] = useState(false);
   const fileInputRef = useRef(null);
 
-
   // Função que gerencia o evento de arrastar arquivos
   const handleDragOver = useCallback((e) => {
     e.preventDefault();
@@ -56,7 +55,6 @@ function Upload() {
   };
 
   // Função que gerencia o evento de upload do arquivo
-
   const handleFileUpload = async (file) => {
     if (!file) {
       return;
@@ -130,6 +128,11 @@ function Upload() {
 
   return (
     <>
+      {/* Disclaimer no canto superior direito */}
+      <div className="disclaimer">
+        Atenção essa é apenas uma DEMO! Favor não fazer uploads de arquivos importantes / sensiveis pois não tem data para deleção MAS SERÃO DELETADOS SEM AVISO! Logo o serviço estará pronto! Aguarde.
+      </div>
+      
       {/* Overlay de drag and drop para a tela inteira */}
       {showDropOverlay && (
         <div 
@@ -150,6 +153,7 @@ function Upload() {
           </div>
         </div>
       )}
+      
       {/* Container principal */}
       <div className="app-container">
         <div className="card">
@@ -201,7 +205,6 @@ function Upload() {
           </div>
 
           {/* Link para a Sessão de Download */}
-
           <div className="download-section">
             <Link to="/download" className="download-link">
               <svg className="download-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -236,6 +239,11 @@ function Upload() {
               </svg>
               Veja o Frontend
             </a>
+          </div>
+
+          {/* Créditos discretos no final */}
+          <div className="credits">
+            Desenvolvido por <a href="https://github.com/devsants" target="_blank" rel="noopener noreferrer">devSants</a>
           </div>
         </div>
       </div>
