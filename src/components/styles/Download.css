@@ -1,5 +1,22 @@
 /* Estilos específicos para a página de download */
 
+/* Disclaimer no canto superior direito */
+.disclaimer {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  max-width: 320px;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  z-index: 1001;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid #ff9900;
+}
+
 .download-section {
   margin-bottom: 24px;
 }
@@ -76,6 +93,60 @@
   color: white;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(67, 97, 238, 0.2);
+}
+/* Estilo dos botões do Github */
+.github-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.github-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.github-button:hover {
+  background-color: #2f363d;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.github-icon {
+  flex-shrink: 0;
+}
+
+/* Créditos discretos */
+.credits {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  font-size: 0.85rem;
+  color: #6c757d;
+  text-align: center;
+}
+
+.credits a {
+  color: #4361ee;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.credits a:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade */
