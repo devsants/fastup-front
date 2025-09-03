@@ -8,6 +8,7 @@ import Upload from './components/Upload';
 
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
+// Utiliza o react-router-dom para gerenciar as rotas da aplicação
 const router = createBrowserRouter([
   {
     path: '/',

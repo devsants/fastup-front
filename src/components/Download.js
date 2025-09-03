@@ -3,7 +3,8 @@ import "./styles/Download.css";
 
 
 function Download() {
-  // document.title = "FastUp - Download";
+
+  // Função que gerencia o evento de download do arquivo pelo código informado
   const getFile = () => {
     const code = document.querySelector("input[type='text']").value;
     if (!code) {
@@ -17,7 +18,6 @@ function Download() {
             if (!response.ok) {
                 throw new Error("File download failed.");
             }
-            // Obter o filename do header Content-Disposition
             const contentDisposition = response.headers.get('Content-Disposition');
             let filename = `file${code}`;
             if (contentDisposition) {
@@ -29,6 +29,7 @@ function Download() {
             
             return response.blob().then(blob => ({ blob, filename }));
         })
+        // Abre a janela de download do arquivo para o cliente
         .then(({ blob, filename }) => {
             const url = window.URL.createObjectURL(blob);
             const a = document.createElement("a");
@@ -41,6 +42,7 @@ function Download() {
             window.URL.revokeObjectURL(url);
             document.body.removeChild(a);
         })
+        // Caso o código esteja errado envia o alerta.
         .catch((error) => {
             alert("Erro ao baixar o arquivo. Verifique o código e tente novamente.");
         });
@@ -56,6 +58,8 @@ function Download() {
           </h1>
           <p className="subtitle">Baixe seus arquivos rapidamente</p>
         </div>
+
+        {/* Sessão de download */}
 
         <div className="download-section">
           <div className="input-group">
@@ -80,6 +84,8 @@ function Download() {
         <div className="divider">
           <span>ou</span>
         </div>
+
+        {/* Link para a Sessão de Upload */}
 
         <div className="upload-section">
           <Link to="/upload" className="upload-link">
