@@ -130,7 +130,7 @@ function Upload() {
     <>
       {/* Disclaimer no canto superior direito */}
       <div className="disclaimer">
-        Atenção essa é apenas uma DEMO! Favor não fazer uploads de arquivos importantes / sensiveis pois não tem data para deleção MAS SERÃO DELETADOS SEM AVISO! Logo o serviço estará pronto! Aguarde.
+        Atenção essa é apenas uma DEMO! Por favor, não faça uploads de arquivos importantes/sensíveis, pois não tem data para deleção MAS SERÃO DELETADOS SEM AVISO! Logo o serviço completo estará pronto! Obrigado.
       </div>
       
       {/* Overlay de drag and drop para a tela inteira */}
