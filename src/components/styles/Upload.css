@@ -28,7 +28,7 @@ body {
   opacity: 1;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   border-left: 4px solid #ff9900;
-  animation: fadeOut 12s forwards;
+  animation: fadeOut 5s forwards;
 
 }
 
@@ -75,7 +75,7 @@ body {
 
 @keyframes fadeOut {
   from { opacity: 1; }
-  to { opacity: 0 }  
+  to { opacity: 0; display: none;}  
 }
 
 .drop-overlay-content {
