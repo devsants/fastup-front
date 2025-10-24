@@ -126,7 +126,7 @@ function Download() {
             </a>
           </div>
           <div className="credits">
-            Desenvolvido por <a href="https://github.com/devsants" target="_blank" rel="noopener noreferrer">devSants</a>
+            Desenvolvido por <a href="https://github.com/devsants" target="_blank" rel="noopener noreferrer">Ricardo Oliveira</a>
           </div>
         </div>
       </div>
