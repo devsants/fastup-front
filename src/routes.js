@@ -8,7 +8,7 @@ const Routes = () => {
     return ( 
         <BrowserRouter>
             <Route component={Upload} title="FastUp - Upload" path="/" exact />
-            <Route component={Download} title="FastUp - Downlaod" path="/download" />
+            <Route component={Download} title="FastUp - Download" path="/download" />
         </BrowserRouter>
     )
 }
